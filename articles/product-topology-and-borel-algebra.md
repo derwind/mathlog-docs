@@ -37,16 +37,18 @@ N(U_{t_{1}}, \cdots, U_{t_{k}}) := \bigcap_{i=1}^{k}\{\pi_{t_{i}}^{−1}(U_{t_{i
 \tag{1}
 \end{align*}
 
+![位相の（準）開基の可視化](/uploads/mathdown/i9sZkrGFmXu3BdpXAXFb.png)
+
 よって、$X=(\mathbb{R}^{n})^{T}$の積位相における開集合は一般に$O = \bigcup N(U_{t_{1}},\cdots, U_{t_{k}})$の形で表現される。この位相は各$\pi_{t},\ t\in T$を連続にする最弱の位相である。
 
 また、この積位相は$X$の函数について「各点収束の位相」とも呼ばれる。つまり、$f_{n} \to f$ in $X$ $\Longleftrightarrow$ $f_{n}(t) \to f(t),\ \forall t \in T$である。(Ref. [F] Prop 4.12)
 
 ## $\sigma$-加法族
 
-$X$に次のような$\sigma$-加法族を導入する。$\mathbb{R}^{n}$の Borel 集合$F_{t_{i}}\in \mathcal{B}(\mathbb{R}^{n}), 1 \leq i \leq k$を用いて
+$X$に次のような$\sigma$-加法族を導入する。$\mathbb{R}^{n}$の Borel 集合$F_{t_{i}} \in \mathcal{B}(\mathbb{R}^{n}),\ 1 \leq i \leq k$を用いて
 
 \begin{align*}
-\{f\in X;f(t_{i})\in F_{t_{i}},1\leq i\leq k\}
+\{f \in X;f(t_{i}) \in F_{t_{i}},\ 1 \leq i \leq k\}
 \tag{2}
 \end{align*}
 
