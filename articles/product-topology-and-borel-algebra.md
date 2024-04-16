@@ -37,8 +37,6 @@ N(U_{t_{1}}, \cdots, U_{t_{k}}) := \bigcap_{i=1}^{k}\{\pi_{t_{i}}^{−1}(U_{t_{i
 \tag{1}
 \end{align*}
 
-![位相の（準）開基の可視化](/uploads/mathdown/i9sZkrGFmXu3BdpXAXFb.png)
-
 よって、$X=(\mathbb{R}^{n})^{T}$の積位相における開集合は一般に$O = \bigcup N(U_{t_{1}},\cdots, U_{t_{k}})$の形で表現される。この位相は各$\pi_{t},\ t\in T$を連続にする最弱の位相である。
 
 また、この積位相は$X$の函数について「各点収束の位相」とも呼ばれる。つまり、$f_{n} \to f$ in $X$ $\Longleftrightarrow$ $f_{n}(t) \to f(t),\ \forall t \in T$である。(Ref. [F] Prop 4.12)
@@ -67,7 +65,7 @@ Eq. (2) を書き換えよう。これは$f\in X$で$t_{1}$, $t_{2}$, $t_{3}$で
 
 ここで、$\bar{\mathcal{B}}$を開基$N(U_{1},\cdots, U_{k})$の集合から生成される最小の$\sigma$-加法族とする。この開基が定める位相が**第 2 可算公理を満たす**時（後述）、開基の可算個の合併$\bigcup N(U_{1},\cdots, U_{k})$で表現される開集合がすべて$\bar{\mathcal{B}}$に含まれる。つまり$\bar{\mathcal{B}}$**は$X$の位相についての Borel 集合族**となる。  
 ところで、$\mathcal{O}(\mathbb{R}^{n}) \subset \mathcal{B}(\mathbb{R}^{n})$なので、$\bar{\mathcal{B}} \subset \mathcal{B}$である。  
-また、Ref. [F]Prop 2.1 より$\mathcal{O}(\mathbb{R}^{n})$の$\pi_{t},\ t\in T$による逆像は$\pi_{t}$の連続性により開集合であり、故に$\bar{\mathcal{B}}$に含まれるので、$\pi_{t}$は$(\bar{\mathcal{B}}, \mathcal{B}(\mathbb{R}^{n}))$-可測である。よって、Eq. (3) またはそれと等価な Eq. (2) のような集合はすべて$\bar{\mathcal{B}}$に含まれる。よって、Eq. (2) の集合から生成される$\sigma$-加法族$\mathcal{B}$は$\mathcal{B} \subset \bar{\mathcal{B}}$ということになる。以上より、$\mathcal{B} = \bar{\mathcal{B}}$である。
+また、Ref. [F] Prop 2.1 より$\mathcal{O}(\mathbb{R}^{n})$の$\pi_{t},\ t\in T$による逆像は$\pi_{t}$の連続性により開集合であり、故に$\bar{\mathcal{B}}$に含まれるので、$\pi_{t}$は$(\bar{\mathcal{B}}, \mathcal{B}(\mathbb{R}^{n}))$-可測である。よって、Eq. (3) またはそれと等価な Eq. (2) のような集合はすべて$\bar{\mathcal{B}}$に含まれる。よって、Eq. (2) の集合から生成される$\sigma$-加法族$\mathcal{B}$は$\mathcal{B} \subset \bar{\mathcal{B}}$ということになる。以上より、$\mathcal{B} = \bar{\mathcal{B}}$である。
 
 最後に、$X$**の積位相が第 2 加算公理を満たすことが示されれば**、$\mathcal{B}$は Borel 集合であることが分かる。これについては、$\mathbb{R}^{n}$は第 2 加算公理を満たす（c.f. Ref. [U] 例 17.5）ことから、仮定より$T$は可算濃度なので$X = (\mathbb{R}^{n})^{T}$もまた第 2 加算公理を満たすことから従う(c.f. Ref. [F] Section 4.2 Exercise 20, Ref. [K] Chapter 3 Theorem 6 & Problems M)。
 
@@ -81,10 +79,10 @@ Eq. (2) を書き換えよう。これは$f\in X$で$t_{1}$, $t_{2}$, $t_{3}$で
 
 ## 参考文献
 
-[Ø]B. エクセンダール, 確率微分方程式, 丸善出版, 2012
+[Ø] B. エクセンダール, 確率微分方程式, 丸善出版, 2012
 
-[F]G. Folland, Real Analysis(Second Edition), John Wiley& Sons, Inc., 1999
+[F] G. Folland, Real Analysis (Second Edition), John Wiley& Sons, Inc., 1999
 
-[U]内田伏一, 集合と位相, 裳華房, 1985
+[U] 内田伏一, 集合と位相, 裳華房, 1985
 
-[K]John L. Kelley, General Topology, Springer, 1955
+[K] John L. Kelley, General Topology, Springer, 1955
