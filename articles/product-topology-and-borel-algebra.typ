@@ -21,13 +21,13 @@ $
 $t in T$ に対して射影 $pi_t: (RR^n)^T -> RR^n$ を $f |-> f(t)$ で定める。この射影を用いて $X$ に積位相を入れる。よって、$t in T$ に対して、準開基は $U_t in cal(O)(RR^n)$ に対する “シリンダー” となる。$f(t)$ が属する $RR^n$ に目印をつけて $RR^n_t$ と書くことにすると、イメージとしては以下のような感じのものになる。
 
 $
-pi_t^(-1) (U_t) = (times.big_(t^prime < t) RR^n_(t^prime)) times U_t times (times.big_(t^prime > t) RR^n_(t^prime))
+pi_t^(-1) (U_t) = (product_(t^prime < t) RR^n_(t^prime)) times U_t times (product_(t^prime > t) RR^n_(t^prime))
 $
 
 積位相の開基はこれらの有限交叉となる。例えば 2 個の準開基の交叉は以下のようになる。
 
 $
-sect.big_(i=1)^2 pi_(t_i)^(-1) (U_(t_i)) = (times.big_(t^prime < t_1) RR^n_(t^prime)) times U_(t_1) times (times.big_(t_1 < t^prime < t_2) RR^n_(t^prime)) times U_(t_2) times (times.big_(t^prime > t_2) RR^n_(t^prime))
+sect.big_(i=1)^2 pi_(t_i)^(-1) (U_(t_i)) = (product_(t^prime < t_1) RR^n_(t^prime)) times U_(t_1) times (product_(t_1 < t^prime < t_2) RR^n_(t^prime)) times U_(t_2) times (product_(t^prime > t_2) RR^n_(t^prime))
 $
 
 もう少し一般的な書き方をすると、以下のようなものである:

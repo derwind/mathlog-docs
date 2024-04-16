@@ -21,13 +21,13 @@ $t\inT$に対して射影$\pi_{t}:(\mathbb{R}^{n})^{T}→\mathbb{R}^{n}$を$f↦
 $t\inT$に対して射影$\pi_{t}:(\mathbb{R}^{n})^{T}→\mathbb{R}^{n}$を$f↦f(t)$で定める。この射影を用いて$X$に積位相を入れる。よって、$t\inT$に対して、準開基は$U_{t}\in\mathcal{O}(\mathbb{R}^{n})$に対する“シリンダー” となる。$f(t)$が属する$\mathbb{R}^{n}$に目印をつけて$\mathbb{R}_{t}^{n}$と書くことにすると、イメージとしては以下のような感じのものになる。
 
 \begin{align*}
-\pi_{t}^{−1}(U_{t})=(⨉_{t^{′}<t}\mathbb{R}_{t^{′}}^{n})\times U_{t}\times (⨉_{t^{′}>t}\mathbb{R}_{t^{′}}^{n})
+\pi_{t}^{−1}(U_{t})=(\prod_{t^{′}<t}\mathbb{R}_{t^{′}}^{n})\times U_{t}\times (\prod_{t^{′}>t}\mathbb{R}_{t^{′}}^{n})
 \end{align*}
 
 積位相の開基はこれらの有限交叉となる。例えば 2 個の準開基の交叉は以下のようになる。
 
 \begin{align*}
-⋂_{i=1}^{2}\pi_{t_{i}}^{−1}(U_{t_{i}})=(⨉_{t^{′}<t_{1}}\mathbb{R}_{t^{′}}^{n})\times U_{t_{1}}\times (⨉_{t_{1}<t^{′}<t_{2}}\mathbb{R}_{t^{′}}^{n})\times U_{t_{2}}\times (⨉_{t^{′}>t_{2}}\mathbb{R}_{t^{′}}^{n})
+⋂_{i=1}^{2}\pi_{t_{i}}^{−1}(U_{t_{i}})=(\prod_{t^{′}<t_{1}}\mathbb{R}_{t^{′}}^{n})\times U_{t_{1}}\times (\prod_{t_{1}<t^{′}<t_{2}}\mathbb{R}_{t^{′}}^{n})\times U_{t_{2}}\times (\prod_{t^{′}>t_{2}}\mathbb{R}_{t^{′}}^{n})
 \end{align*}
 
 もう少し一般的な書き方をすると、以下のようなものである:
