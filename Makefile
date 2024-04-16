@@ -5,7 +5,7 @@ SRC=$(TARGET:.md=.typ)
 all: $(TARGET)
 $(TARGET): $(SRC)
 	articles/typst-to-mathlog $< $@
-	@perl -pi -e 's/→/\\to /g; s/↦/\\mapsto /g; s/…/\\cdots /g; s/∀/\\forall /g; s/≤/\\leq /g; s/≥/\\geq /g; s/⟺/\\Longleftrightarrow /g;' $@
+	@perl -pi -e 's/→/\\to /g; s/↦/\\mapsto /g; s/…/\\cdots /g; s/∀/\\forall /g; s/≤/\\leq /g; s/≥/\\geq /g; s/⟺/\\Longleftrightarrow /g; s/≔/:=/g;' $@
 
 clean:
 	@rm -f $(TARGET)

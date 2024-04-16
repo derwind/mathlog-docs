@@ -67,7 +67,7 @@ $
 \
 また、Ref. [F] Prop 2.1 より $cal(O)(RR^n)$ の $pi_t, t in T$ による逆像は $pi_t$ の連続性により開集合であり、故に$macron(cal(B))$ に含まれるので、$pi_t$ は $(macron(cal(B)), cal(B)(RR^n))$-可測である。よって、Eq. (3) またはそれと等価な Eq. (2) のような集合はすべて $macron(cal(B))$ に含まれる。よって、Eq. (2) の集合から生成される $sigma$-加法族 $cal(B)$ は $cal(B) subset macron(cal(B))$ ということになる。以上より、$cal(B) = macron(cal(B))$ である。
 
-最後に、*$X$ の積位相が第 2 加算公理を満たすことが示されれば*、$cal(B)$ は Borel 集合であることが分かる。これについては、$RR^n$ は第 2 加算公理を満たす（c.f. Ref. [U] 例 17.5）ことから、仮定より $T$ は可算濃度なので $X = (RR^n)^T$ もまた第 2 加算公理を満たすことから従う (c.f. Ref. [F] Section 4.2 Exercise 20, Ref [K] Chapter 3 Theorem 6 & Problems M)。
+最後に、*$X$ の積位相が第 2 加算公理を満たすことが示されれば*、$cal(B)$ は Borel 集合であることが分かる。これについては、$RR^n$ は第 2 加算公理を満たす（c.f. Ref. [U] 例 17.5）ことから、仮定より $T$ は可算濃度なので $X = (RR^n)^T$ もまた第 2 加算公理を満たすことから従う (c.f. Ref. [F] Section 4.2 Exercise 20, Ref. [K] Chapter 3 Theorem 6 & Problems M)。
 
 == 例
 
