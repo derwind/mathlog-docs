@@ -38,3 +38,6 @@
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux
 
 typst-to-mathlog
+
+package*.json
+node_modules
