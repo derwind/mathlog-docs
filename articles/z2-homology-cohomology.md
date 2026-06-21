@@ -1,5 +1,5 @@
 ---
-title: "ℤ₂-係数のホモロジーとコホモロジーについて考えたい"
+title: "ℤ₂-係数のコホモロジーの双対境界作用素の像について考えたい"
 emoji: "📈"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: []
@@ -8,7 +8,7 @@ published: false
 
 ## 概要
 
-文献 [EH] を見ていくと、$\mathbb{Z}_2$-係数のホモロジーの話が出て来る[^1]。これとコホモロジーについて考えたい。
+文献 [EH] を見ていくと、$\mathbb{Z}_2$-係数のホモロジーの話が出て来る[^1]。これとコホモロジーについて考えたい。特にコホモロジーの双対境界作用素の像について計算してみたい。
 
 [^1]: 原文では _module 2 coefficients_ という書き方ではある。
 
@@ -54,7 +54,7 @@ $$
 
 ## 内積空間としての $p$-鎖群
 
-$\{\sigma_i\} \subset C_p$ と $\{\sigma^j\} \subset C^p$ という 2 つのベクトル空間の基底を考えた。これらの基底を結びつける $\iota: C_p \to C^p$
+(1) $\{\sigma_i\} \subset C_p$ と $\{\sigma^j\} \subset C^p$ という 2 つのベクトル空間の基底を考えた。これらの基底を結びつける $\iota: C_p \to C^p$
 
 $$
 \begin{align*}
@@ -62,7 +62,9 @@ $$
 \end{align*}
 $$
 
-を考えると、$\iota$ のもとで $C_p$ と $C^p$ は自然にベクトル空間として同型になる。さらに、
+を考えると、$\iota$ のもとで $C_p$ と $C^p$ は自然にベクトル空間として同型になる。
+
+(2) さらに、
 
 $$
 \begin{align*}
@@ -70,7 +72,19 @@ $$
 \end{align*}
 $$
 
-によって、$C_p$ に内積 $(\cdot, \cdot)$ を導入できる。この時、$\sigma \in C_p,\ \sigma^\prime \in C_{p-1}$ に対して $\tilde{\delta} = \iota^{-1} \circ \delta \circ \iota$ と置くと、
+によって、$C_p$ に内積 $(\cdot, \cdot)$ を導入できる。
+
+(3) また、$\sigma_i \in C_p$ と $\sigma^j \in C_p$ をとると
+
+$$
+\begin{align*}
+    (\sigma_i, \sigma_j) = \langle \sigma_i, \iota (\sigma_j) \rangle =  \langle \sigma_i, \sigma^j \rangle = \delta_{ij}
+\end{align*}
+$$
+
+となるので、$\{\sigma_i\}$ は $C_p$ の “正規直交基底” になっていることが分かる。
+
+(4) 次に、$\sigma \in C_p,\ \sigma^\prime \in C_{p-1}$ に対して $\tilde{\delta} = \iota^{-1} \circ \delta \circ \iota$ と置くと、
 
 $$
 \begin{align*}
@@ -87,7 +101,47 @@ $$
 \end{align*}
 $$
 
-と書ける。これによって、$\delta = \partial^*$ という記号がしっくり来るようになる。
+と書ける。これによって、$\delta = \partial^*$ という記号がしっくり来るようになる。またこの時 $\delta: C_{p-1} \to C_p$ と考えることができる。
+
+## 双対境界作用素 $\delta$ の像
+
+単体 $\sigma = [u_1, u_2, \ldots, u_p] \in C_p$ の $\delta$ による像を考えたい。少なくともこれは $C_{p+1}$ に入るので、$C_{p+1}$ の $(p+1)$-単体からなる基底を $\{\tau_i\}$ として、
+
+$$
+\begin{align*}
+    \delta \sigma = \sum b_i \tau_i
+\end{align*}
+$$
+
+と書ける。ここで $\{\tau_i\}$ は $C_{p+1}$ の正規直交基底であるので、$b_i = (\tau_i, \delta \sigma)_{p+1}$ であることが分かる。すなわち、
+
+$$
+\begin{align*}
+    \delta \sigma = \sum (\tau_i, \delta \sigma)_{p+1} \tau_i
+\end{align*}
+$$
+
+という展開を得る。
+
+ここで興味があるのは $(\tau_i, \delta \sigma)_{p+1} \in \mathbb{Z}_2$ が消えない場合である。つまり $(\tau_i, \delta \sigma)_{p+1} = 1$ の場合である。従って、
+
+$$
+\begin{align*}
+    1 = (\tau_i, \delta \sigma)_{p+1} = (\partial \tau_i, \sigma)_p
+\end{align*}
+$$
+
+である。$\tau_i = [v_1, \ldots, v_{p+1}]$ と置くと、$\partial \tau_i = \sum_k [v_1, \ldots, v_{k-1}, v_{k+1}, \ldots, v_{p+1}]$ であった。$\{\sigma_i\}$ を $C_p$ の正規直交基底として、各 $k$ に対して相異なる $[v_1, \ldots, v_{k-1}, v_{k+1}, \ldots, v_{p+1}] \in \{\sigma_i\}$ であり、$\sigma \in \{\sigma_i\}$ でもある。したがって、ある $k$ に対して $[v_1, \ldots, v_{k-1}, v_{k+1}, \ldots, v_{p+1}] = \sigma$ となることが $(\tau_i, \delta \sigma)_{p+1} = 1$ の必要十分条件である。
+
+よって以下の定理を得た。
+
+**定理**
+
+単体 $\sigma \in C_p$ の $\delta$ による像は、$(p+1)$-鎖であってその境界に $\sigma$ を含むような単体からなるものである。
+
+## まとめ
+
+それはそうだろうなという結果を得ることができた。きっと色々と文献を漁ればでてくる程度の話であろうが、Hilbert 空間論の Riesz の表現定理にインスパイアされる形のストーリーと記述で導出してみた。
 
 ## 参考文献
 
