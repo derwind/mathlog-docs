@@ -24,7 +24,7 @@ $$
 \end{align*}
 $$
 
-とする。$\mathbb{Z}_2$ は標数 2 の体であり、$C_p$ は基底を $\{\sigma_i\}$ とするようなベクトル空間でもある。
+とする。$\mathbb{Z}_2$ は（標数 2 の）体であり、$C_p$ は基底を $\{\sigma_i\}$ とするようなベクトル空間でもある。
 
 $p$-双対鎖群は $C^p = C^p (K) = \operatorname{Hom} (C_p, \mathbb{Z}_2)$ で定義される。$\{\sigma^j\} \subset C^p$ を $\{\sigma_i\}$ の双対基底、従って $\sigma^j (\sigma_i) = \delta_{ij}$ となるようにとることで、これを基底として $C^p$ も $\mathbb{Z}_2$-係数のベクトル空間になる。また、ベクトル空間としては $C^p = C_p^*$ という形で共役空間になっている。
 
@@ -143,6 +143,16 @@ $$
 
 それはそうだろうなという結果を得ることができた。きっと色々と文献を漁ればでてくる程度の話であろうが、Hilbert 空間論の Riesz の表現定理にインスパイアされる形のストーリーと記述で導出してみた。
 
+## 余談
+
+特に表にはホモロジーやコホモロジーの言葉は出していないが、文献 [KFM] pp.68-72 辺りの反復符号や表面符号の話で出て来る $\partial$ と $\delta$ は境界作用素と双対境界作用素を強く意識している気がする。これを含め量子誤り訂正符号の文脈でホモロジー代数を活用しているものに文献 [D] や [F] があるようだ。
+
 ## 参考文献
 
 [EH] Herbert Edelsbrunner & John L. Harer, Computational Topology: An Introduction, Americal Mathematical Society, 2010
+
+[KFM] 小柴健史 & 藤井啓祐 & 森前智行, 観測に基づく量子計算, コロナ社, 2017
+
+[D] Nicolas Delfosse, Decoding color codes by projection onto surface codes, arXiv:1308.6207, 2013
+
+[F] Keisuke Fujii, Quantum Computation with Topological Codes, arXiv:1504.01444, 2015
